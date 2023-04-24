@@ -1,0 +1,25 @@
+@startuml Sequence Diagram: Data Loading and Preprocessing
+' First Diagram: Sequence Diagram for Data Loading and Preprocessing
+title Sequence Diagram: Data Loading and Preprocessing
+
+actor System
+System -> IrisModel : load_data()
+activate IrisModel
+IrisModel -> DataLoader : load_data()
+activate DataLoader
+DataLoader --> IrisModel : return dataset
+deactivate DataLoader
+
+IrisModel -> Preprocessor : convert_to_float(dataset)
+activate Preprocessor
+Preprocessor --> IrisModel : return processed dataset
+deactivate Preprocessor
+
+IrisModel -> Preprocessor : convert_to_int(dataset)
+activate Preprocessor
+Preprocessor --> IrisModel : return processed dataset
+deactivate Preprocessor
+
+deactivate IrisModel
+
+@enduml

@@ -1,0 +1,11 @@
+include README.md
+include LICENSE
+include requirements.txt
+include setup.py
+recursive-include src *
+recursive-include data *
+exclude .gitignore
+global-exclude __pycache__/*
+global-exclude *.pyc
+global-exclude *.egg-info
+global-exclude *.egg-info/*

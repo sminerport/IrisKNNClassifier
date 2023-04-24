@@ -1,0 +1,19 @@
+@startuml Sequence Diagram: Prediction
+' Second Diagram: Sequence Diagram for Prediction
+title Sequence Diagram: Prediction
+
+actor User
+User -> IrisClassifierApp : click "Predict"
+activate IrisClassifierApp
+IrisClassifierApp -> IrisModel : predict(inputs)
+activate IrisModel
+IrisModel -> KNearestNeighbors : predict_classification(train, inputs)
+activate KNearestNeighbors
+KNearestNeighbors --> IrisModel : return predicted class
+deactivate KNearestNeighbors
+IrisModel --> IrisClassifierApp : return prediction
+deactivate IrisModel
+IrisClassifierApp -> User : show prediction
+deactivate IrisClassifierApp
+
+@enduml
