@@ -24,7 +24,7 @@ pip install pandas scikit-learn
 1. Clone this repository to your local machine:
 
 ```sh
-git clone https://github.com/sminerport/iris-classification-knn.git
+git clone https://github.com/sminerport/iris-knn-classifier.git
 ```
 
 2. Navigate to the repository's directory:
