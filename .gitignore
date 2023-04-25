@@ -127,6 +127,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+venv_iris_knn/
 
 # Spyder project settings
 .spyderproject
