@@ -10,7 +10,6 @@ The k-NN model is trained on the Iris dataset using 5-fold cross-validation and 
 
 Here is the script out, with the accuracy per fold, the mean accuracy, and the prediction output with some theoretical test cases.
 
-![Program Output](/images/knn-classifier.png)
 
 * **KNearestNeighbors**: This class is responsible for the k-NN algorithm implementation, including training the model and making predictions.
 
@@ -52,9 +51,11 @@ python main.py
 
 The script will train the k-NN model on the Iris dataset, using 5-fold cross-validation and 10 neighbors (you can change these values). It will print the accuracy for each fold and the mean accuracy.
 
+![sequence_diagram](/uml/output/sequence_diagram/sequence_diagram.png)
+
 After training the model, you can input your own values for sepal length, sepal width, petal length, and petal width. The model will predict the flower category (setosa, versicolor, or virginica) based on the input provided by the user.
 
-![sequence_diagram](/uml/output/sequence_diagram/sequence_diagram.png)
+![Program Output](/images/knn-classifier.png)
 
 ## Customizing the Script
 
