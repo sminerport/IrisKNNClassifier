@@ -2,6 +2,12 @@
 
 This repository contains a Python script that implements the k-Nearest Neighbors (k-NN) algorithm for classifying Iris flowers into three species: setosa, versicolor, and virginica. The script uses the Iris dataset, which consists of 150 samples with 4 features each: sepal length, sepal width, petal length, and petal width.
 
+The k-NN model is trained on the Iris dataset using 5-fold cross-validation and 10 neighbors, which can be changed in the script. After training, the model allows you to input your own values for sepal length, sepal width, petal length, and petal width. The model will then predict the flower category (setosa, versicolor, or virginica) based on the input provided by the user.
+
+Below is an overview of the classes and their interactions in the script:
+
+![UML Diagram](/uml/output/knn_implementation_uml/knn_implementation_uml.png)
+
 ## Getting Started
 
 These instructions will guide you on how to run the script on your local machine.
