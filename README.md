@@ -58,7 +58,7 @@ You can customize the number of cross-validation folds and the number of neighbo
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
