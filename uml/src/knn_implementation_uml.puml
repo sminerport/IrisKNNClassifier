@@ -5,19 +5,21 @@ title KNN Implementation with Data Loading, Preprocessing, and Cross Validation
 class KNearestNeighbors {
     -num_neighbors: int
     +__init__(num_neighbors: int): None
-    +fit(X_train: List[List[float]], y_train: List[int]): None
-    +predict(X_test: List[List[float]]): List[int]
+    +euclidean_distance(row1: List[float], row2: List[float]): float
+    +get_neighbors(train: List[List[float]], test_row: List[float]): List[List[float]]
+    +predict_classification(train: List[List[float]], test_row: List[float]): Union[int, str]
+    +predict_all(train: List[List[float]], test: List[List[float]]): List[Union[int, str]]
 }
 
 class DataLoader {
     -filename: str
     +__init__(filename: str): None
     +load_data(): List[List[str]]
-    +convert_to_float(dataset: List[List[str]], column: int): None
-    +convert_to_int(dataset: List[List[str]], column: int): Dict[str, int]
 }
 
 class Preprocessor {
+    +convert_to_float(dataset: List[List[str]], column: int): None
+    +convert_to_int(dataset: List[List[str]], column: int): Dict[str, int]
     +normalize_dataset(dataset: List[List[float]], minmax: List[Tuple[float, float]]): None
     +dataset_minmax(dataset: List[List[float]]): List[Tuple[float, float]]
 }
